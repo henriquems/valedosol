@@ -38,7 +38,7 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 container mx-auto px-4 text-center">
                 <div className="flex flex-col gap-6 max-w-4xl mx-auto animate-fade-in">
-                    <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-100 bg-clip-text text-transparent">
+                    <h1 className="font-serif text-3xl lg:text-5xl font-bold bg-gradient-to-r from-yellow-100 via-yellow-500 to-yellow-100 bg-clip-text text-transparent">
                         Vivendas Morada do Sol
                     </h1>
 
