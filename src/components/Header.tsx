@@ -39,8 +39,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-background/95 backdrop-blur-md shadow-soft py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-white/70 backdrop-blur-md shadow-soft py-3'
+          : 'bg-white/70 py-5'
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
@@ -54,7 +54,9 @@ export default function Header() {
             <button
               key={link.href}
               onClick={() => scrollToSection(link.href)}
-              className={`flex text-sm items-center gap-1 hover:bg-green-800 rounded-lg p-2 hover:text-white transition-colors duration-300 cursor-pointer ${isScrolled ? 'text-black' : 'text-zinc-700'}`}
+              className={`flex text-sm items-center gap-1 hover:bg-green-800 rounded-lg 
+                p-2 hover:text-white transition-colors duration-300 cursor-pointer
+                ${isScrolled ? 'text-black' : 'text-zinc-700'}`}
             >
               {link.icon}
               {link.label}
@@ -89,14 +91,13 @@ export default function Header() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md shadow-elevated animate-slide-up">
-          <nav className="container mx-auto px-2 py-2 flex flex-col gap-1">
+          <nav className="container mx-auto px-2 py-2 flex flex-col gap-0.5">
             {navLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="flex items-center gap-1 text-white text-left py-2 hover:text-accent 
-                  transition-colors bg-green-800 hover:bg-green-700 rounded-lg p-2"
-              >
+                className="flex items-center gap-1 text-white text-sm font-light text-left py-2 hover:text-white
+                  transition-colors bg-green-800 hover:bg-green-700 rounded-sm p-2 cursor-pointer">
                 {link.icon}
                 {link.label}
               </button>
