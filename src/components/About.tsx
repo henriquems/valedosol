@@ -13,8 +13,7 @@ export default function About() {
             <div className="container mx-auto px-4">
                 <div
                     ref={ref}
-                    className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${isVisible ? 'animate-fade-in' : 'opacity-0'
-                        }`}
+                    className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
                 >
                     {/* Image */}
                     <div className="relative order-2 lg:order-1">

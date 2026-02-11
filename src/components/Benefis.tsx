@@ -78,9 +78,7 @@ export default function Benefits() {
 
         <div
           ref={ref}
-          className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 ${
-            isVisible ? 'animate-fade-in' : 'opacity-0'
-          }`}
+          className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
         >
           {benefits.map((benefit, index) => (
             <div

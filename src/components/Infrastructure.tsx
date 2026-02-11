@@ -67,10 +67,10 @@ export default function Infrastructure() {
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="font-serif text-2xl font-bold text-primary-foreground mb-2">
+                <h3 className="font-serif text-2xl font-bold text-white mb-2">
                   {item.title}
                 </h3>
-                <p className="text-primary-foreground/80 text-sm leading-relaxed">
+                <p className="text-zinc-100 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>

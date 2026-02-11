@@ -32,18 +32,17 @@ export default function Hero() {
                     className="object-cover z-0 opacity-80"
                     priority
                 />
-                <div className="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-zinc-50 to-transparent z-10" />
+                <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-zinc-50 to-transparent z-10" />
             </div>
 
             {/* Content */}
             <div className="relative z-10 container mx-auto px-4 text-center">
                 <div className="flex flex-col gap-6 max-w-4xl mx-auto animate-fade-in">
-                    <h1 className="text-xl lg:text-5xl font-bold
-                        bg-linear-to-r from-yellow-50 via-yellow-300 to-yellow-50 bg-clip-text text-transparent">
+                    <h1 className="text-xl lg:text-5xl font-bold bg-gradient-to-r from-yellow-50 via-yellow-500 to-yellow-100 bg-clip-text text-transparent">
                         Vivendas Morada do Sol
                     </h1>
 
-                    <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
                         Lotes de 1.300m² com escritura em um refúgio natural a apenas 800 metros da cidade.
                         Viva a tranquilidade do campo com todo o conforto que você merece.
                     </p>
@@ -55,7 +54,7 @@ export default function Hero() {
                             className="bg-yellow-600 hover:bg-yellow-700 text-zinc-100 text-lg px-8 py-6 cursor-pointer"
                         >
                             <div className='flex items-center gap-1'>
-                                <SearchCheck />
+                                <SearchCheck className="!w-6 !h-6" />
                                 <span>Quero conhecer</span>
                             </div>
                         </Button>
@@ -67,7 +66,7 @@ export default function Hero() {
                             className="border-yellow-600 text-white hover:bg-yellow-600 hover:border-yellow-600 hover:text-white text-lg px-8 py-6 cursor-pointer"
                         >
                             <div className='flex items-center gap-1'>
-                                <BookOpenCheck />
+                                <BookOpenCheck className="!w-6 !h-6" />
                                 <span>Saiba mais</span>
                             </div>
                         </Button>

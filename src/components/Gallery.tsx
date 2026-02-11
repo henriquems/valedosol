@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react';
 import { useScrollAnimation } from '@/data/hooks/useScrollAnimation';
 import { X } from 'lucide-react';
@@ -43,19 +45,16 @@ export default function Gallery() {
 
                 <div
                     ref={ref}
-                    className={`grid grid-cols-2 md:grid-cols-3 gap-4 ${isVisible ? 'animate-fade-in' : 'opacity-0'
-                        }`}
+                    className={`grid grid-cols-2 md:grid-cols-3 gap-4 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
                 >
                     {galleryImages.map((image, index) => (
                         <button
                             key={index}
                             onClick={() => setSelectedImage(image.src)}
-                            className={`relative overflow-hidden rounded-xl group cursor-pointer ${index === 0 ? 'col-span-2 row-span-2' : ''
-                                }`}
+                            className={`relative overflow-hidden rounded-xl group cursor-pointer ${index === 0 ? 'col-span-2 row-span-2' : ''}`}
                         >
                             <div
-                                className={`relative w-full overflow-hidden ${index === 0 ? 'h-[300px] md:h-[500px]' : 'h-[150px] md:h-[240px]'
-                                    }`}
+                                className={`relative w-full overflow-hidden ${index === 0 ? 'h-[300px] md:h-[500px]' : 'h-[150px] md:h-[240px]'}`}
                             >
                                 <Image
                                     src={image.src}

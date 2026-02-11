@@ -1,7 +1,6 @@
-import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-stone-900 text-zinc-400 py-16">
@@ -92,7 +91,7 @@ export default function Footer() {
         <div className="border-t border-primary-foreground/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/50 text-sm">
-              © {currentYear} Vivendas Morada do Sol. Todos os direitos reservados.
+              © 2026 Vivendas Morada do Sol. Todos os direitos reservados.
             </p>
             <p className="text-primary-foreground/50 text-sm">
               CRECI: XX.XXX-J
